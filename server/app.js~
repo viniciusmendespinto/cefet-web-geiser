@@ -16,7 +16,7 @@ var db = {
 app.set('view engine', 'hbs');
 
 var fs = require('fs');
-db["jogadores"] = fs.readFileSync(__dirname + '/data/jogadores.json');
+db["jogadores"] = fs.readFileSync('data/jogadores.json');
 
 app.set('views', 'server/views');
 
