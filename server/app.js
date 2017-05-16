@@ -1,5 +1,7 @@
-let express = require('express'),
-    app = express();
+let express = require('express');
+let fs = require('fs');
+let _ = require('underscore');
+app = express();
 
 app.use(express.static('client/'));
 
@@ -11,10 +13,8 @@ app.listen(3000, function () {
 // você pode colocar o conteúdo dos arquivos json no objeto "db" logo abaixo
 // dica: 3-4 linhas de código (você deve usar o módulo de filesystem (fs))
 
-let fs = require('fs');
-_ = require('underscore'),
 let db = {
-	jogadores: JSON.parse(fs.readFileSync(__dirname + '/data/jogadores.json')),
+    jogadores: JSON.parse(fs.readFileSync(__dirname + '/data/jogadores.json')),
     jogosPorJogador: JSON.parse(fs.readFileSync(__dirname + '/data/jogosPorJogador.json'))
 };
 

@@ -12,5 +12,17 @@
     "express": "latest",
     "hbs": "^4.0.1",
     "underscore": "^1.8.3"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciusmendespinto/cefet-web-geiser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/viniciusmendespinto/cefet-web-geiser/issues"
+  },
+  "homepage": "https://github.com/viniciusmendespinto/cefet-web-geiser#readme"
 }
